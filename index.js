@@ -22,7 +22,7 @@ const sortDate = (arr) => {
 }
 const createDate = (arr, arrI) => {
   let date = 0
-  if (!arrI) {
+  if (arrI === undefined) {
     return sortDate(arr)
   } else {
     date = Math.round(Date.parse(arr[arrI]) / 1000)
