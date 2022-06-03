@@ -14,8 +14,8 @@ const createDate = (arr, arrI) => {
     return sortDate(arr)
   } else {
     date = Math.round(Date.parse(arr[arrI]) / 1000)
-    dateString = date.toString
-    return date
+    dateString = date.toString()
+    return dateString
   }
 }
 const sortDate = (arr) => {
